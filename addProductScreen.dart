@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class Addproductscreen extends StatefulWidget {
-  const Addproductscreen({super.key});
+class AddProductScreen extends StatefulWidget {
+  const AddProductScreen({super.key});
 
   @override
-  State<Addproductscreen> createState() => _AddproductscreenState();
+  State<AddProductScreen> createState() => _AddproductscreenState();
 }
 
-class _AddproductscreenState extends State<Addproductscreen> {
+class _AddproductscreenState extends State<AddProductScreen> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
 
   final TextEditingController _nameController = TextEditingController();
@@ -23,7 +23,7 @@ class _AddproductscreenState extends State<Addproductscreen> {
       appBar: AppBar(
         title: Text('Add Product'),
       ),
-      body: Expanded(
+      body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Form(
